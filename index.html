@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        button {
+            height: 40px;
+            width: 130px;
+            border-radius: 50px;
+            font-family: sans-serif;
+            font-size: 15px;
+            margin: 10px;
+            align-self: center;
+            border: none;
+            box-shadow: inset 3px 3px 15px 3px;
+            cursor: pointer;
+        }
+        #themeblack{
+            background-color: black;
+            color: white;
+        }
+        #themeblue{
+            background-color: blue;
+            color: white;
+        }
+        #themegreen{
+            background-color: green;
+            color: white;
+        }
+        .btns{
+            /* border: 2px solid black; */
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        These is a simple project to show the light and dark theme
+    </h1>
+    <div class="btns">
+    <button id="themeblack" class = "allbtn">Black Theme</button>
+    <button id="themeblue" class = "allbtn">Blue Theme</button>
+    <button id="themegreen" class = "allbtn">Green Theme</button>
+</div>
+<div class="txt">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, amet expedita quasi ducimus quam voluptatem ut alias vel sunt quae pariatur odio necessitatibus nostrum nemo maiores ratione quis incidunt aliquam corporis facere qui facilis repellat earum! Eveniet quod delectus, aspernatur eum temporibus laborum voluptate officiis culpa pariatur. Natus odit, aperiam aut voluptas commodi temporibus quod nam non consequuntur excepturi unde in distinctio consectetur? Expedita, illo perspiciatis. Velit veniam itaque ut odio quibusdam quae aut natus animi cum molestiae cupiditate placeat ea nulla iusto vitae sequi voluptas, doloremque, provident eaque pariatur ratione dolor! Cupiditate, dolores! Ad repellendus fugiat ut laboriosam. Corporis.
+</div>
+</body>
+<script>
+    let btn = document.getElementById('themeblack');
+    btn.addEventListener('click', blacktheme);
+    function blacktheme() {
+        let content =
+            document.getElementsByTagName("body");
+        content[0].style.backgroundColor = "black";
+        content[0].style.color = "white";
+    }
+    let btn2 = document.getElementById('themeblue');
+    btn2.addEventListener('click', bluetheme);
+    function bluetheme() {
+        let content =
+            document.getElementsByTagName("body");
+        content[0].style.backgroundColor = "blue";
+        content[0].style.color = "white";
+    }
+    let btn3 = document.getElementById('themegreen');
+    btn3.addEventListener('click', greentheme);
+    function greentheme() {
+        let content =
+            document.getElementsByTagName("body");
+        content[0].style.backgroundColor = "green";
+        content[0].style.color = "white";
+    }
+</script>
+
+</html>
